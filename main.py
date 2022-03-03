@@ -1,1 +1,3 @@
 from cotacoes import *
+
+Menu()
