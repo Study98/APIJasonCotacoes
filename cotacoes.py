@@ -9,14 +9,9 @@ cot = cot.json()
 
 def Limpar():
     if os.system('clear') == 0:
-        print('ok')
+        pass
     else:
         os.system('cls')
-    """try:
-        subprocess.run(['clear'], check=True)
-    except subprocess.CalledProcessError:
-        #print("Erro")
-        subprocess.run("cls")"""
         
 def CotEuro():
     Limpar()
