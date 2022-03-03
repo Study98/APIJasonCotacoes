@@ -8,10 +8,15 @@ cot = requests.get("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-
 cot = cot.json()
 
 def Limpar():
-    try:
+    if os.system('clear') == 0:
+        print('ok')
+    else:
         os.system('cls')
-    except:
-        os.system('clear')
+    """try:
+        subprocess.run(['clear'], check=True)
+    except subprocess.CalledProcessError:
+        #print("Erro")
+        subprocess.run("cls")"""
         
 def CotEuro():
     Limpar()
